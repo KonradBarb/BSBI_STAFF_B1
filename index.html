@@ -205,230 +205,43 @@
       <a href="https://www.instagram.com/jazzupyourgerman/" target="_blank">📸</a>
     </div>
   </div>
+<script>
+const questions =[
+  { "text": "Was bedeutet „Vollmacht“?", "options": ["Eine Rechnung über Dienstleistungen", "Die Erlaubnis, dass die Kanzlei für den Mandanten handeln darf", "Ein Schreiben vom Gericht", "Eine gerichtliche Entscheidung"], "correct": 1 },
+  { "text": "Was ist eine Mahnung?", "options": ["Eine schriftliche Aufforderung vom Gericht, etwas zu bezahlen", "Eine Vereinbarung zwischen Anwalt und Mandant", "Eine gerichtliche Entscheidung über Schuld", "Ein Vertrag zwischen Gläubiger und Schuldner"], "correct": 0 },
+  { "text": "Wer ist ein Mandant?", "options": ["Der Richter", "Der Anwalt", "Die Person, die den Anwalt beauftragt", "Das Gericht"], "correct": 2 },
+  { "text": "Wer ist der Gläubiger?", "options": ["Die Person, die Geld bezahlen muss", "Die Person, die Geld bekommt", "Der Anwalt", "Der Geschäftsführer"], "correct": 1 },
+  { "text": "Wer ist der Schuldner?", "options": ["Jemand, der Geld fordern darf", "Jemand, der Geld bezahlen muss", "Der Anwalt", "Das Gericht"], "correct": 1 },
 
-  <script>
-const questions = [
-  { 
-    text: "Wo ziehst du dich an?", 
-    options: [
-      "Ich ziehe mich im Schlafzimmer an.", 
-      "Ich ziehe im Schlafzimmer mich an.", 
-      "Ich mich ziehe im Schlafzimmer an.", 
-      "Ich ziehe an mich im Schlafzimmer."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wann ziehst du dich elegant an?", 
-    options: [
-      "Ich ziehe elegant mich an, wenn ich ausgehe.", 
-      "Ich mich ziehe elegant an.", 
-      "Ich ziehe mich elegant an, wenn ich ausgehe.", 
-      "Ich ziehe mich an elegant."
-    ], 
-    correct: 2 
-  },
-  { 
-    text: "Was siehst du dir in der Stadt an?", 
-    options: [
-      "Ich sehe mir die Stadt an.", 
-      "Ich sehe die Stadt mir an.", 
-      "Ich mich sehe die Stadt an.", 
-      "Ich sehe an mir die Stadt."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Was kannst du dir gut merken?", 
-    options: [
-      "Ich merke mir gut Vokabeln.", 
-      "Ich mir merke gut Vokabeln.", 
-      "Ich merke gut mir Vokabeln.", 
-      "Ich merke mich gut Vokabeln."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Worüber ärgerst du dich?", 
-    options: [
-      "Ich ärgere über mich den Stau.", 
-      "Ich ärgere mich über den Stau.", 
-      "Ich ärgere den Stau mich.", 
-      "Ich ärgere mich den Stau über."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Worauf freust du dich?", 
-    options: [
-      "Ich freue mich auf das Wochenende.", 
-      "Ich freue auf das Wochenende mich.", 
-      "Ich mich freue auf das Wochenende.", 
-      "Ich freue das Wochenende auf mich."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wo entspannst du dich?", 
-    options: [
-      "Ich entspanne mich im Park.", 
-      "Ich entspanne im Park mich.", 
-      "Ich mich entspanne im Park.", 
-      "Ich entspanne mich auf dem Park."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wohin legst du dich am Abend?", 
-    options: [
-      "Ich lege ins Bett mich.", 
-      "Ich lege mich ins Bett.", 
-      "Ich mich lege ins Bett.", 
-      "Ich lege mich Bett ins."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Wie oft rasierst du dich?", 
-    options: [
-      "Ich rasieren mich jeden Tag.", 
-      "Ich rasiere mich jeden Tag.", 
-      "Ich mich rasiere jeden Tag.", 
-      "Ich rasiere jeden Tag mich."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Was leihst du dir?", 
-    options: [
-      "Ich leihe mir ein Fahrrad.", 
-      "Ich mir leihe ein Fahrrad.", 
-      "Ich leihe mich ein Fahrrad.", 
-      "Ich leihen mir ein Fahrrad."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Was überlegst du dir?", 
-    options: [
-      "Ich überlege mir das gut.", 
-      "Ich überlege das mir gut.", 
-      "Ich mir überlege das gut.", 
-      "Ich überlege gut mir das."
-    ], 
-    correct: 0 
-  },
+  { "text": "Was ist ein Schriftsatz?", "options": ["Eine Liste der Forderungen", "Schriftliche Information oder Stellungnahme an das Gericht", "Ein Urteil des Richters", "Ein Vertrag zwischen Anwalt und Mandant"], "correct": 1 },
+  { "text": "Wer entscheidet im Gericht, wer Recht hat?", "options": ["Der Anwalt", "Der Richter", "Der Geschäftsführer", "Der Schuldner"], "correct": 1 },
+  { "text": "Was ist eine GmbH?", "options": ["Ein Rechtsanwaltstitel", "Gesellschaft mit beschränkter Haftung", "Ein Dokument vom Gericht", "Eine Forderung"], "correct": 1 },
+  { "text": "Wer vertritt die GmbH?", "options": ["Der Richter", "Der Geschäftsführer", "Der Gläubiger", "Der Schuldner"], "correct": 1 },
+  { "text": "Was ist ein Inkasso-Unternehmen?", "options": ["Ein Gericht", "Ein Unternehmen, das Geldforderungen eintreibt", "Eine Form von GmbH", "Ein Mandant"], "correct": 1 },
 
-  { 
-    text: "Wo ziehst du dich an?", 
-    options: [
-      "Ich ziehe mich im Schlafzimmer an.", 
-      "Ich ziehe im Schlafzimmer mich an.", 
-      "Ich mich ziehe im Schlafzimmer an.", 
-      "Ich ziehe an mich im Schlafzimmer."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wann ziehst du dich elegant an?", 
-    options: [
-      "Ich ziehe elegant mich an, wenn ich ausgehe.", 
-      "Ich mich ziehe elegant an.", 
-      "Ich ziehe mich elegant an, wenn ich ausgehe.", 
-      "Ich ziehe mich an elegant."
-    ], 
-    correct: 2 
-  },
-  { 
-    text: "Was siehst du dir in der Stadt an?", 
-    options: [
-      "Ich sehe mir die Stadt an.", 
-      "Ich sehe die Stadt mir an.", 
-      "Ich mich sehe die Stadt an.", 
-      "Ich sehe an mir die Stadt."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Was kannst du dir gut merken?", 
-    options: [
-      "Ich merke mir gut Vokabeln.", 
-      "Ich mir merke gut Vokabeln.", 
-      "Ich merke gut mir Vokabeln.", 
-      "Ich merke mich gut Vokabeln."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Worüber ärgerst du dich?", 
-    options: [
-      "Ich ärgere über mich den Stau.", 
-      "Ich ärgere mich über den Stau.", 
-      "Ich ärgere den Stau mich.", 
-      "Ich ärgere mich den Stau über."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Worauf freust du dich?", 
-    options: [
-      "Ich freue mich auf das Wochenende.", 
-      "Ich freue auf das Wochenende mich.", 
-      "Ich mich freue auf das Wochenende.", 
-      "Ich freue das Wochenende auf mich."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wo entspannst du dich?", 
-    options: [
-      "Ich entspanne mich im Park.", 
-      "Ich entspanne im Park mich.", 
-      "Ich mich entspanne im Park.", 
-      "Ich entspanne mich auf dem Park."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Wohin legst du dich am Abend?", 
-    options: [
-      "Ich lege ins Bett mich.", 
-      "Ich lege mich ins Bett.", 
-      "Ich mich lege ins Bett.", 
-      "Ich lege mich Bett ins."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Wie oft rasierst du dich?", 
-    options: [
-      "Ich rasieren mich jeden Tag.", 
-      "Ich rasiere mich jeden Tag.", 
-      "Ich mich rasiere jeden Tag.", 
-      "Ich rasiere jeden Tag mich."
-    ], 
-    correct: 1 
-  },
-  { 
-    text: "Was leihst du dir?", 
-    options: [
-      "Ich leihe mir ein Fahrrad.", 
-      "Ich mir leihe ein Fahrrad.", 
-      "Ich leihe mich ein Fahrrad.", 
-      "Ich leihen mir ein Fahrrad."
-    ], 
-    correct: 0 
-  },
-  { 
-    text: "Was überlegst du dir?", 
-    options: [
-      "Ich überlege mir das gut.", 
-      "Ich überlege das mir gut.", 
-      "Ich mir überlege das gut.", 
-      "Ich überlege gut mir das."
-    ], 
-    correct: 0 
-  }
+  { "text": "Was ist eine Rechnung?", "options": ["Aufforderung, vor Gericht zu erscheinen", "Zahlungsaufforderung für Dienstleistungen", "Ein Urteil des Richters", "Ein Mahnbescheid"], "correct": 1 },
+  { "text": "Was ist eine Forderung?", "options": ["Geld, das ein Schuldner zahlen muss", "Das Gehalt des Anwalts", "Die Meinung des Richters", "Ein gerichtlicher Schriftsatz"], "correct": 0 },
+  { "text": "Was bedeutet „erwerben“?", "options": ["verkaufen", "klagen", "kaufen", "zahlen"], "correct": 2 },
+  { "text": "Was sind Zinsen?", "options": ["Ein Teil der Vollmacht", "Zusätzliche Kosten, wenn Zahlungen verspätet erfolgen", "Der Lohn des Richters", "Die Forderung des Gläubigers"], "correct": 1 },
+  { "text": "Was ist ein Stundenhonorar?", "options": ["Fester Pauschalbetrag", "Bezahlung nach der Arbeitszeit", "Zahlung nach Anzahl der Schriftsätze", "Gerichtskosten"], "correct": 1 },
+
+  { "text": "Was bedeutet „Pauschale“?", "options": ["Bezahlung nach Stunden", "Fester Betrag", "Zusätzliche Kosten bei Verzug", "Gerichtliche Mahnung"], "correct": 1 },
+  { "text": "Was ist Vergütung?", "options": ["Das Honorar, das der Anwalt vom Mandanten erhält", "Die Forderung des Schuldners", "Eine Vollmacht", "Der Rechnungsbetrag"], "correct": 0 },
+  { "text": "Was bedeutet „jemanden verklagen“?", "options": ["Jemandem Geld geben", "Jemanden vor Gericht bringen", "Einen Vertrag unterschreiben", "Eine Rechnung bezahlen"], "correct": 1 },
+  { "text": "Was bedeutet „zwingen / verpflichten“?", "options": ["Jemandem etwas erlauben", "Jemandem sagen, dass er etwas tun muss", "Eine Rechnung schreiben", "Eine Mahnung zustellen"], "correct": 1 },
+  { "text": "Was bedeutet „rechtliche Schritte einleiten“?", "options": ["Ein Unternehmen gründen", "Vor Gericht gehen oder klagen", "Eine Vollmacht erteilen", "Eine Rechnung ausstellen"], "correct": 1 },
+
+  { "text": "Was ist Zivilrecht?", "options": ["Streit zwischen zwei Privatpersonen", "Strafe durch den Staat", "Recht für Beamte", "Verwaltungsrecht"], "correct": 0 },
+  { "text": "Was ist Strafrecht?", "options": ["Streit über Geldschulden", "Wenn jemand ein Gesetz bricht", "Gerichtskosten", "Rechte eines Mandanten"], "correct": 1 },
+  { "text": "Was ist ein Gericht?", "options": ["Ein Anwalt", "Ein Ort, wo über Recht entschieden wird", "Eine GmbH", "Ein Inkassounternehmen"], "correct": 1 },
+  { "text": "Was ist eine Aufforderung?", "options": ["Eine Vollmacht", "Jemandem sagen, dass er etwas tun soll", "Eine Mahnung vom Gericht", "Eine Rechnung"], "correct": 1 },
+  { "text": "Welche Angabe gehört nicht auf eine Rechnung?", "options": ["Rechnungsnummer", "Rechnungsbetrag", "Meinung des Richters", "Zahlungsfrist"], "correct": 2 },
+
+  { "text": "Was bedeutet „juristisch“?", "options": ["Wirtschaftlich", "Im Zusammenhang mit dem Recht", "Medizinisch", "Politisch"], "correct": 1 },
+  { "text": "Wie lange ist eine Rechnung in der Regel fällig?", "options": ["Sofort", "7 Tage", "14 Tage", "30 Tage"], "correct": 2 },
+  { "text": "Wer vertritt den Mandanten vor Gericht?", "options": ["Der Richter", "Der Anwalt", "Der Geschäftsführer", "Der Schuldner"], "correct": 1 },
+  { "text": "Wer beauftragt oft ein Inkasso-Unternehmen?", "options": ["Der Schuldner", "Der Gläubiger", "Der Richter", "Der Mandant"], "correct": 1 },
+  { "text": "Was bedeutet „Forderung einziehen“?", "options": ["Einen Schuldner vor Gericht bringen", "Geld, das jemandem zusteht, eintreiben", "Eine Mahnung schreiben", "Eine Vollmacht ausstellen"], "correct": 1 }
 ];
     let currentQuestion = 0;
     let score = 0;
