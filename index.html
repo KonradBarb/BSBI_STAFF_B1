@@ -206,43 +206,107 @@
     </div>
   </div>
 <script>
-const questions =[
-  { "text": "Was bedeutet „Vollmacht“?", "options": ["Eine Rechnung über Dienstleistungen", "Die Erlaubnis, dass die Kanzlei für den Mandanten handeln darf", "Ein Schreiben vom Gericht", "Eine gerichtliche Entscheidung"], "correct": 1 },
-  { "text": "Was ist eine Mahnung?", "options": ["Eine schriftliche Aufforderung vom Gericht, etwas zu bezahlen", "Eine Vereinbarung zwischen Anwalt und Mandant", "Eine gerichtliche Entscheidung über Schuld", "Ein Vertrag zwischen Gläubiger und Schuldner"], "correct": 0 },
-  { "text": "Wer ist ein Mandant?", "options": ["Der Richter", "Der Anwalt", "Die Person, die den Anwalt beauftragt", "Das Gericht"], "correct": 2 },
-  { "text": "Wer ist der Gläubiger?", "options": ["Die Person, die Geld bezahlen muss", "Die Person, die Geld bekommt", "Der Anwalt", "Der Geschäftsführer"], "correct": 1 },
-  { "text": "Wer ist der Schuldner?", "options": ["Jemand, der Geld fordern darf", "Jemand, der Geld bezahlen muss", "Der Anwalt", "Das Gericht"], "correct": 1 },
 
-  { "text": "Was ist ein Schriftsatz?", "options": ["Eine Liste der Forderungen", "Schriftliche Information oder Stellungnahme an das Gericht", "Ein Urteil des Richters", "Ein Vertrag zwischen Anwalt und Mandant"], "correct": 1 },
-  { "text": "Wer entscheidet im Gericht, wer Recht hat?", "options": ["Der Anwalt", "Der Richter", "Der Geschäftsführer", "Der Schuldner"], "correct": 1 },
-  { "text": "Was ist eine GmbH?", "options": ["Ein Rechtsanwaltstitel", "Gesellschaft mit beschränkter Haftung", "Ein Dokument vom Gericht", "Eine Forderung"], "correct": 1 },
-  { "text": "Wer vertritt die GmbH?", "options": ["Der Richter", "Der Geschäftsführer", "Der Gläubiger", "Der Schuldner"], "correct": 1 },
-  { "text": "Was ist ein Inkasso-Unternehmen?", "options": ["Ein Gericht", "Ein Unternehmen, das Geldforderungen eintreibt", "Eine Form von GmbH", "Ein Mandant"], "correct": 1 },
 
-  { "text": "Was ist eine Rechnung?", "options": ["Aufforderung, vor Gericht zu erscheinen", "Zahlungsaufforderung für Dienstleistungen", "Ein Urteil des Richters", "Ein Mahnbescheid"], "correct": 1 },
-  { "text": "Was ist eine Forderung?", "options": ["Geld, das ein Schuldner zahlen muss", "Das Gehalt des Anwalts", "Die Meinung des Richters", "Ein gerichtlicher Schriftsatz"], "correct": 0 },
-  { "text": "Was bedeutet „erwerben“?", "options": ["verkaufen", "klagen", "kaufen", "zahlen"], "correct": 2 },
-  { "text": "Was sind Zinsen?", "options": ["Ein Teil der Vollmacht", "Zusätzliche Kosten, wenn Zahlungen verspätet erfolgen", "Der Lohn des Richters", "Die Forderung des Gläubigers"], "correct": 1 },
-  { "text": "Was ist ein Stundenhonorar?", "options": ["Fester Pauschalbetrag", "Bezahlung nach der Arbeitszeit", "Zahlung nach Anzahl der Schriftsätze", "Gerichtskosten"], "correct": 1 },
 
-  { "text": "Was bedeutet „Pauschale“?", "options": ["Bezahlung nach Stunden", "Fester Betrag", "Zusätzliche Kosten bei Verzug", "Gerichtliche Mahnung"], "correct": 1 },
-  { "text": "Was ist Vergütung?", "options": ["Das Honorar, das der Anwalt vom Mandanten erhält", "Die Forderung des Schuldners", "Eine Vollmacht", "Der Rechnungsbetrag"], "correct": 0 },
-  { "text": "Was bedeutet „jemanden verklagen“?", "options": ["Jemandem Geld geben", "Jemanden vor Gericht bringen", "Einen Vertrag unterschreiben", "Eine Rechnung bezahlen"], "correct": 1 },
-  { "text": "Was bedeutet „zwingen / verpflichten“?", "options": ["Jemandem etwas erlauben", "Jemandem sagen, dass er etwas tun muss", "Eine Rechnung schreiben", "Eine Mahnung zustellen"], "correct": 1 },
-  { "text": "Was bedeutet „rechtliche Schritte einleiten“?", "options": ["Ein Unternehmen gründen", "Vor Gericht gehen oder klagen", "Eine Vollmacht erteilen", "Eine Rechnung ausstellen"], "correct": 1 },
 
-  { "text": "Was ist Zivilrecht?", "options": ["Streit zwischen zwei Privatpersonen", "Strafe durch den Staat", "Recht für Beamte", "Verwaltungsrecht"], "correct": 0 },
-  { "text": "Was ist Strafrecht?", "options": ["Streit über Geldschulden", "Wenn jemand ein Gesetz bricht", "Gerichtskosten", "Rechte eines Mandanten"], "correct": 1 },
-  { "text": "Was ist ein Gericht?", "options": ["Ein Anwalt", "Ein Ort, wo über Recht entschieden wird", "Eine GmbH", "Ein Inkassounternehmen"], "correct": 1 },
-  { "text": "Was ist eine Aufforderung?", "options": ["Eine Vollmacht", "Jemandem sagen, dass er etwas tun soll", "Eine Mahnung vom Gericht", "Eine Rechnung"], "correct": 1 },
-  { "text": "Welche Angabe gehört nicht auf eine Rechnung?", "options": ["Rechnungsnummer", "Rechnungsbetrag", "Meinung des Richters", "Zahlungsfrist"], "correct": 2 },
 
-  { "text": "Was bedeutet „juristisch“?", "options": ["Wirtschaftlich", "Im Zusammenhang mit dem Recht", "Medizinisch", "Politisch"], "correct": 1 },
-  { "text": "Wie lange ist eine Rechnung in der Regel fällig?", "options": ["Sofort", "7 Tage", "14 Tage", "30 Tage"], "correct": 2 },
-  { "text": "Wer vertritt den Mandanten vor Gericht?", "options": ["Der Richter", "Der Anwalt", "Der Geschäftsführer", "Der Schuldner"], "correct": 1 },
-  { "text": "Wer beauftragt oft ein Inkasso-Unternehmen?", "options": ["Der Schuldner", "Der Gläubiger", "Der Richter", "Der Mandant"], "correct": 1 },
-  { "text": "Was bedeutet „Forderung einziehen“?", "options": ["Einen Schuldner vor Gericht bringen", "Geld, das jemandem zusteht, eintreiben", "Eine Mahnung schreiben", "Eine Vollmacht ausstellen"], "correct": 1 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const questions = [
+
+  { "text": "Was bedeutet 'Kündigung'?", "options": ["fesih", "tatil"], "correct": 0 },
+  { "text": "Wie sagt man 'seinen Job verlieren' auf Türkisch?", "options": ["işini kaybetmek", "işini kazanmak"], "correct": 0 },
+  { "text": "Wie übersetzt man 'eine Beratung mit der Anwältin wollen'?", "options": ["avukatla danışma istemek", "doktorla randevu istemek"], "correct": 0 },
+  { "text": "Wie sagt man 'einen Termin vereinbaren'?", "options": ["randevu almak", "bilet almak"], "correct": 0 },
+  { "text": "Was heißt 'die Kopie'?", "options": ["kopya", "asıl"], "correct": 0 },
+  { "text": "Was heißt 'das Original'?", "options": ["asıl", "kopya"], "correct": 0 },
+  { "text": "Wie sagt man 'der Arbeitsvertrag'?", "options": ["iş sözleşmesi", "okul sözleşmesi"], "correct": 0 },
+  { "text": "Wie übersetzt man 'die Gehaltsabrechnung'?", "options": ["maaş bordrosu", "kira sözleşmesi"], "correct": 0 },
+  { "text": "Wie sagt man höflich: 'Bitte bringen Sie … mit'?", "options": ["Lütfen ... getirin", "Lütfen ... bırakın"], "correct": 0 },
+  { "text": "Wie übersetzt man: 'Ich möchte Sie darum bitten, zu helfen'?", "options": ["Size yardım etmenizi rica ediyorum", "Size gitmenizi rica ediyorum"], "correct": 0 },
+  { "text": "Wie sagt man: 'jemanden um etwas bitten'?", "options": ["birinden bir şey rica etmek", "birine bir şey öğretmek"], "correct": 0 },
+  { "text": "Wie sagt man: 'Du hast mich darum gebeten'?", "options": ["Benden bunu rica ettin", "Beni unuttun"], "correct": 0 },
+  { "text": "Wie übersetzt man: 'Ich spreche mit dem Anwalt'?", "options": ["Avukatla konuşuyorum", "Hakimle konuşuyorum"], "correct": 0 },
+  { "text": "Wie sagt man: 'Ich spreche mit der Anwältin'?", "options": ["Avukat hanımla konuşuyorum", "Doktor hanımla konuşuyorum"], "correct": 0 },
+  { "text": "Wie sagt man: 'Ich spreche mit den Anwälten'?", "options": ["Avukatlarla konuşuyorum", "Polislerle konuşuyorum"], "correct": 0 },
+  { "text": "Wie sagt man: 'Ich spreche mit den Anwältinnen'?", "options": ["Kadın avukatlarla konuşuyorum", "Öğretmenlerle konuşuyorum"], "correct": 0 },
+
+  { "text": "Was bedeutet 'sich trennen'?", "options": ["ayrılmak", "toplanmak"], "correct": 0 },
+  { "text": "Wie sagt man 'sich scheiden lassen'?", "options": ["boşanmak", "evlenmek"], "correct": 0 },
+  { "text": "Wie übersetzt man 'sich um etwas kümmern'?", "options": ["bir şeyle ilgilenmek", "bir şeyi unutmak"], "correct": 0 },
+  { "text": "Wie sagt man 'sich über etwas streiten'?", "options": ["bir şey hakkında kavga etmek", "bir şey hakkında gülmek"], "correct": 0 },
+  { "text": "Wie übersetzt man 'das Sorgerecht'?", "options": ["velayet hakkı", "mülkiyet hakkı"], "correct": 0 },
+  { "text": "Wie sagt man 'der Unterhalt' (im rechtlichen Sinn)?", "options": ["nafaka", "maaş"], "correct": 0 },
+  { "text": "Ich gehe ___ Arzt.", "options": ["zu", "in"], "correct": 0 },
+  { "text": "Ich bin gerade ___ Arzt.", "options": ["bei", "zu"], "correct": 0 },
+  { "text": "Ich komme gerade ___ Arzt.", "options": ["vom", "zum"], "correct": 0 },
+
+  { "text": "Morgen gehe ich ___ Friseur.", "options": ["zum", "bei"], "correct": 0 },
+  { "text": "Ich bin ___ Friseur und lasse mir die Haare schneiden.", "options": ["beim", "zum"], "correct": 0 },
+  { "text": "Ich komme ___ Friseur.", "options": ["vom", "zu"], "correct": 0 },
+
+  { "text": "Wir fahren ___ Italien.", "options": ["nach", "zu"], "correct": 0 },
+  { "text": "Wir machen Urlaub ___ Insel Mallorca.", "options": ["auf der", "in der"], "correct": 0 },
+  { "text": "Wir fahren ___ die Berge.", "options": ["in", "auf"], "correct": 0 },
+  { "text": "Wir waren eine Woche ___ den Bergen.", "options": ["in", "auf"], "correct": 0 },
+  { "text": "Wir kommen gerade ___ Italien zurück.", "options": ["aus", "von"], "correct": 0 },
+
+  { "text": "Ich gehe ___ Rewe einkaufen.", "options": ["zu", "bei"], "correct": 0 },
+  { "text": "Ich kaufe gerade ___ Rewe ein.", "options": ["bei", "zu"], "correct": 0 },
+  { "text": "Ich komme ___ Rewe.", "options": ["von", "zu"], "correct": 0 },
+
+  { "text": "Heute gehen wir ___ Kino.", "options": ["ins", "im"], "correct": 0 },
+  { "text": "Wir sind schon ___ Kino.", "options": ["im", "ins"], "correct": 0 },
+  { "text": "Wir kommen gerade ___ Kino.", "options": ["aus dem", "im"], "correct": 0 },
+
+  { "text": "Ich gehe ___ Park spazieren.", "options": ["in den", "im"], "correct": 0 },
+  { "text": "Ich sitze gerade ___ Park.", "options": ["im", "in den"], "correct": 0 },
+  { "text": "Ich komme ___ Park zurück.", "options": ["aus dem", "in dem"], "correct": 0 },
+
+  { "text": "Heute Abend gehe ich ___ Bar.", "options": ["in die", "bei"], "correct": 0 },
+  { "text": "Ich trinke gerade etwas ___ Bar.", "options": ["in der", "zu der"], "correct": 0 },
+  { "text": "Wir kommen spät ___ Bar zurück.", "options": ["aus der", "von der"], "correct": 0 }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     let currentQuestion = 0;
     let score = 0;
     let incorrectAnswers = [];
