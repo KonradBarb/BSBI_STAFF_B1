@@ -264,61 +264,199 @@
 
 const questions =
 [
-  { "text": "Diese Initiative ___ von mir ___.", "options": ["geht / aus", "kommt / an"], "correct": 0 },
-  { "text": "Möchte sie verschiedene Gerichte ___?", "options": ["ausprobieren", "probieren aus"], "correct": 0 },
-  { "text": "Sie hat schon verschiedene neue Restaurants ___.", "options": ["ausprobiert", "ausproben"], "correct": 0 },
-  { "text": "… und kann uns diese Restaurants ___.", "options": ["vorschlagenen", "empfehlen"], "correct": 1 },
-  { "text": "… und kann uns verschiedene ___ geben.", "options": ["Empfehlungen", "Empfehlunge"], "correct": 0 },
-  { "text": "Sie macht kulinarische ___.", "options": ["Entdeckungen", "Entdecker"], "correct": 0 },
-  { "text": "Sie macht keine ___ Entdeckungen.", "options": ["neue", "neuen"], "correct": 1 },
+  { "text": "Weihnachten verbringen", "options": ["pasar la Navidad", "celebrar una boda"], "correct": 0 },
+  { "text": "Ich habe Weihnachten bei meinen Eltern ___.", "options": ["verbracht", "verbraucht"], "correct": 0 },
 
-  { "text": "Ich suche ___ dich.", "options": ["nach", "— (Akkusativ ohne Präposition)"], "correct": 1 },
-  { "text": "Ich suche ___ dir.", "options": ["nach", "für"], "correct": 0 },
-  { "text": "Die beiden Länder haben ihre Kultur ___.", "options": ["gemeinsam", "zusammen"], "correct": 0 },
+  { "text": "klingeln", "options": ["sonar (el timbre)", "gritar"], "correct": 0 },
+  { "text": "Es ist ___, die Tür abzuschließen.", "options": ["notwendig", "notwendigen"], "correct": 0 },
+  { "text": "die Notwendigkeit", "options": ["la necesidad", "la posibilidad"], "correct": 0 },
 
-  { "text": "„Das Essen“ bedeutet:", "options": ["Essen im Allgemeinen", "ein bestimmtes Rezept"], "correct": 0 },
-  { "text": "„Das Gericht“ ist:", "options": ["ein bestimmtes Essen", "Essen im Allgemeinen"], "correct": 0 },
-  { "text": "Arepa ist ein typisches ___ Gericht.", "options": ["venezolanischer", "venezolanisches"], "correct": 1 },
-  { "text": "Besuchst du die Familie ___ deinem Mann?", "options": ["von", "aus"], "correct": 0 },
-  { "text": "Bereitest du dich ___ deine Reise vor?", "options": ["für", "auf"], "correct": 1 },
-  { "text": "Ist das Essen in Madrid besser ___ in Berlin?", "options": ["wie", "als"], "correct": 1 },
+  { "text": "die Luft", "options": ["el aire", "el humo"], "correct": 0 },
+  { "text": "die warme Luft", "options": ["el aire caliente", "el aire frío"], "correct": 0 },
+  { "text": "die Klimaanlage", "options": ["el aire acondicionado", "la calefacción"], "correct": 0 },
+  { "text": "die Anlage", "options": ["la instalación", "la ventana"], "correct": 0 },
 
-  { "text": "Ich mache eine ___ im Internet.", "options": ["suchen", "Suche"], "correct": 1 },
-  { "text": "Es gefällt mir, ___ Madrid zu reisen.", "options": ["zu", "nach"], "correct": 1 },
+  { "text": "eine Dusche nehmen", "options": ["ducharse", "descansar"], "correct": 0 },
+  { "text": "Ich gehe ___ die Dusche.", "options": ["unter", "in"], "correct": 0 },
+  { "text": "bei jemandem wohnen", "options": ["vivir con alguien", "visitar a alguien"], "correct": 0 },
 
-  { "text": "Ein Mann aus Venezuela ist ein ___.", "options": ["Venezolaner", "venezolanisch"], "correct": 0 },
-  { "text": "Eine Frau aus Venezuela ist eine ___.", "options": ["Venezolaner", "Venezolanerin"], "correct": 1 },
-  { "text": "Das Adjektiv heißt ___.", "options": ["Venezolaner", "venezolanisch"], "correct": 1 },
-  { "text": "A ist anders ___ B.", "options": ["wie", "als"], "correct": 1 },
-  { "text": "A und B sind ___.", "options": ["verschieden", "anders als"], "correct": 0 },
-  { "text": "Ein Mann aus Argentinien ist ein ___.", "options": ["Argentinier", "Argentinierer"], "correct": 0 },
-  { "text": "Ein Mann aus Uruguay ist ein ___.", "options": ["Uruguayener", "Uruguayer"], "correct": 1 },
+  { "text": "die Schwiegereltern", "options": ["los suegros", "los abuelos"], "correct": 0 },
+  { "text": "Ich ___ müde aus.", "options": ["sehe", "bin"], "correct": 0 },
 
-  { "text": "Sie streiten sich ___ etwas.", "options": ["über", "um"], "correct": 1 },
-  { "text": "Es gibt einen ___ zwischen ihnen.", "options": ["streiten", "Streit"], "correct": 1 },
-  { "text": "Streiten sie sich darum, woher der Mate-Tee ___?", "options": ["kommt", "kommen"], "correct": 0 },
-  { "text": "Die Argentinier sagen, dass der Mate-Tee aus Argentinien ___.", "options": ["kommen", "kommt"], "correct": 1 },
+  { "text": "allgemein", "options": ["en general", "especialmente"], "correct": 0 },
+  { "text": "Fühlst du ___ heute fit?", "options": ["dich", "dir"], "correct": 0 },
 
-  { "text": "In Deutschland gibt es eine Vielfalt ___ Kulturen.", "options": ["aus", "von"], "correct": 1 },
-  { "text": "Gibt es in Madrid eine größere Vielfalt von Restaurants ___ in Berlin?", "options": ["wie", "als"], "correct": 1 },
+  { "text": "morgens", "options": ["por la mañana", "por la noche"], "correct": 0 },
+  { "text": "abends", "options": ["por la noche", "por la mañana"], "correct": 0 },
+  { "text": "___ Morgen stehe ich früh auf.", "options": ["Am", "Im"], "correct": 0 },
 
-  { "text": "Mein Bruder und ich teilen ___ eine Wohnung.", "options": ["uns", "wir"], "correct": 0 },
-  { "text": "Wir haben viele ___ gemeinsam.", "options": ["Gemeinsam", "Gemeinsamkeiten"], "correct": 1 },
-  { "text": "Ich teile deine ___.", "options": ["Meinung", "Meinungen"], "correct": 0 },
+  { "text": "anmachen", "options": ["encender", "apagar"], "correct": 0 },
+  { "text": "Ich ___ die Klimaanlage an.", "options": ["mache", "nehme"], "correct": 0 },
+  { "text": "ausschalten", "options": ["apagar", "encender"], "correct": 0 },
 
-  { "text": "Ich ___ mich neben den Tisch.", "options": ["stehe", "stelle mich"], "correct": 1 },
-  { "text": "Ich ___ neben dem Tisch.", "options": ["stehe", "stelle mich"], "correct": 0 },
+  { "text": "Heiligabend", "options": ["Nochebuena", "Nochevieja"], "correct": 0 },
+  { "text": "Wir feiern Heiligabend ___ der Familie.", "options": ["mit", "bei"], "correct": 0 },
 
-  { "text": "___ große Mann steht dort.", "options": ["Der", "Den"], "correct": 0 },
-  { "text": "Ich sehe ___ großen Mann.", "options": ["dem", "den"], "correct": 1 },
-  { "text": "Ich helfe ___ großen Mann.", "options": ["dem", "den"], "correct": 0 },
-  { "text": "Ich sehe ___ großen Tiere.", "options": ["die", "den"], "correct": 0 },
-  { "text": "Ich sehe keine ___ Tiere.", "options": ["große", "großen"], "correct": 1 },
-  { "text": "Ich helfe ___ großen Tieren.", "options": ["die", "den"], "correct": 1 },
+  { "text": "Ich erzähle ___ davon.", "options": ["ihnen", "sie"], "correct": 0 },
 
-  { "text": "Leute machen kulinarische ___.", "options": ["Empfehlung", "Empfehlungen"], "correct": 1 },
-  { "text": "Leute machen diese kulinarischen ___.", "options": ["Empfehlungen", "Empfehlung"], "correct": 0 }
+  { "text": "Ich empfinde ___.", "options": ["Kälte", "kalt"], "correct": 0 },
+  { "text": "Ich empfinde ___ für sie.", "options": ["Liebe", "lieben"], "correct": 0 },
+
+  { "text": "Berlin ist ___ als Madrid.", "options": ["kälter", "kalt"], "correct": 0 },
+  { "text": "In Spanien ist es ___ warm wie in Venezuela.", "options": ["so", "sehr"], "correct": 0 },
+
+  { "text": "träumen von etwas", "options": ["soñar con algo", "pensar en algo"], "correct": 0 },
+  { "text": "Ich habe ___ meiner Reise geträumt.", "options": ["von", "über"], "correct": 0 },
+
+  { "text": "sprechen mit jemandem", "options": ["hablar con alguien", "hablar sobre alguien"], "correct": 0 },
+  { "text": "Ich spreche ___ meiner Mutter.", "options": ["mit", "über"], "correct": 0 },
+
+  { "text": "sich auf etwas freuen", "options": ["esperar algo con ilusión", "alegrarse por algo pasado"], "correct": 0 },
+  { "text": "Ich freue mich ___ den Urlaub.", "options": ["auf", "über"], "correct": 0 },
+
+  { "text": "sich bedanken bei jemandem", "options": ["agradecer a alguien", "pedir algo"], "correct": 0 },
+  { "text": "Ich bedanke mich ___ dir.", "options": ["bei", "mit"], "correct": 0 },
+
+  { "text": "an etwas denken", "options": ["pensar en algo", "soñar con algo"], "correct": 0 },
+  { "text": "Ich denke ___ meine Familie.", "options": ["an", "über"], "correct": 0 },
+
+  { "text": "das Bügeleisen", "options": ["la plancha", "la lavadora"], "correct": 0 },
+
+  { "text": "Jetzt kommen noch ein paar Übungen zu den Vergleichen - comparaciones --> ", "options": ["Los geht's", "..."], "correct": 0 },
+  {
+    "text": "Berlin ist ___ groß ___ Hamburg.",
+    "options": ["genauso … wie", "so ähnlich … als"],
+    "correct": 0
+  },
+  {
+    "text": "Mein Bruder ist älter ___ ich.",
+    "options": ["wie", "als"],
+    "correct": 1
+  },
+  {
+    "text": "Spanisch ist ___ schwer ___ Deutsch.",
+    "options": ["genauso … wie", "mehr … als"],
+    "correct": 0
+  },
+  {
+    "text": "Ein Apfel ist gesünder ___ ein Schokoriegel.",
+    "options": ["als", "wie"],
+    "correct": 0
+  },
+  {
+    "text": "Madrid ist ___ ___ Barcelona.",
+    "options": ["so ähnlich wie", "genauso als"],
+    "correct": 0
+  },
+  {
+    "text": "Mein Handy ist neuer ___ deins.",
+    "options": ["wie", "als"],
+    "correct": 1
+  },
+  {
+    "text": "Der Film war ___ spannend ___ das Buch.",
+    "options": ["genauso … wie", "spannender … als"],
+    "correct": 0
+  },
+  {
+    "text": "Der Sommer ist wärmer ___ der Frühling.",
+    "options": ["wie", "als"],
+    "correct": 1
+  },
+  {
+    "text": "Diese Tasche sieht ___ ___ meine Tasche.",
+    "options": ["so ähnlich wie", "genauso als"],
+    "correct": 0
+  },
+  {
+    "text": "Mein Zimmer ist kleiner ___ das Wohnzimmer.",
+    "options": ["als", "wie"],
+    "correct": 0
+  },
+
+  {
+    "text": "Jetzt üben wir Deklination.",
+    "options": ["okay", "..."],
+    "correct": 0
+  },
+  
+  {
+    "text": "Ich sehe ___ alten Mann. (Maskulin, Singular)",
+    "options": ["dem", "den"],
+    "correct": 1
+  },
+  {
+    "text": "Das ist ___ schöne Frau. (Feminin, Singular)",
+    "options": ["eine", "einer"],
+    "correct": 0
+  },
+  {
+    "text": "Er kauft ___ neues Auto. (Neutrum, Singular)",
+    "options": ["einen", "ein"],
+    "correct": 1
+  },
+  {
+    "text": "Wir besuchen ___ große Stadt. (Feminin, Singular)",
+    "options": ["der", "die"],
+    "correct": 1
+  },
+  {
+    "text": "Sie hat ___ guten Freund. (Maskulin, Singular)",
+    "options": ["einen", "ein"],
+    "correct": 0
+  },
+  {
+    "text": "Ich mag ___ kalten Kaffee nicht. (Maskulin, Singular, Negation)",
+    "options": ["kein", "keinen"],
+    "correct": 1
+  },
+  {
+    "text": "Er hat ___ neue Wohnung. (Feminin, Singular)",
+    "options": ["eine", "einer"],
+    "correct": 0
+  },
+  {
+    "text": "Das ist ___ interessantes Buch. (Neutrum, Singular)",
+    "options": ["einem", "ein"],
+    "correct": 1
+  },
+  {
+    "text": "Wir haben ___ guten Lehrer. (Maskulin, Singular)",
+    "options": ["einem", "einen"],
+    "correct": 1
+  },
+  {
+    "text": "Sie trinkt ___ heißen Tee. (Maskulin, Singular)",
+    "options": ["dem", "den"],
+    "correct": 1
+  },
+  {
+    "text": "Ich sehe ___ großen Häuser. (Plural)",
+    "options": ["die", "den"],
+    "correct": 0
+  },
+  {
+    "text": "Er hat ___ neuen Freunde. (Plural)",
+    "options": ["kein", "keine"],
+    "correct": 1
+  },
+  {
+    "text": "Wir kaufen ___ frisches Brot nicht. (Neutrum, Singular, Negation)",
+    "options": ["keinen", "kein"],
+    "correct": 1
+  },
+  {
+    "text": "Sie besucht ___ alte Eltern. (Plural)",
+    "options": ["der", "die"],
+    "correct": 1
+  },
+  {
+    "text": "Ich kenne ___ netten Nachbarn nicht. (Maskulin, Singular, Negation)",
+    "options": ["keinen", "kein"],
+    "correct": 0
+  }
 ]
+
 
 ;
 
