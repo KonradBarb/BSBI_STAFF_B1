@@ -264,73 +264,156 @@
 
 const questions =
 [
-  { "text": "Schichtarbeit", "options": ["trabajo por turnos", "trabajo a tiempo parcial"], "correct": 0 },
-  { "text": "die Schicht", "options": ["el turno", "la pausa"], "correct": 0 },
-  { "text": "die Spätschicht", "options": ["el turno de noche", "el turno de tarde"], "correct": 1 },
-  { "text": "programmieren", "options": ["programar", "planear"], "correct": 0 },
-  { "text": "der Programmierer", "options": ["el programador", "el técnico"], "correct": 0 },
-  { "text": "aufstehen", "options": ["levantarse", "acostarse"], "correct": 0 },
-  { "text": "wachbleiben", "options": ["quedarse despierto", "quedarse dormido"], "correct": 0 },
-
-  { "text": "Er muss immer ___ bleiben, wenn er Bereitschaftsdienst hat.", "options": ["wach", "wachen"], "correct": 0 },
-  { "text": "Muss er immer wach bleiben, wenn er ___?", "options": ["arbeitet", "arbeitetet"], "correct": 0 },
-
-  { "text": "die Bereitschaft", "options": ["la disponibilidad", "la experiencia"], "correct": 0 },
-  { "text": "die Schwägerin", "options": ["la cuñada", "la suegra"], "correct": 0 },
-  { "text": "gruselig", "options": ["horrendo", "divertido"], "correct": 0 },
-
-  { "text": "um sein Leben kämpfen", "options": ["luchar por su vida", "perder la vida"], "correct": 0 },
-  { "text": "in Intensivbehandlung sein", "options": ["estar en cuidados intensivos", "estar en observación"], "correct": 0 },
-  { "text": "der Notfall", "options": ["la emergencia", "la enfermedad"], "correct": 0 },
-  { "text": "die Notaufnahme", "options": ["urgencias", "consulta"], "correct": 0 },
-  { "text": "die Intensivstation", "options": ["UCI", "laboratorio"], "correct": 0 },
-
-  { "text": "der Unfall", "options": ["el accidente", "el retraso"], "correct": 0 },
-  { "text": "das Unglück", "options": ["la desgracia", "la suerte"], "correct": 0 },
-  { "text": "der Flugzeugabsturz", "options": ["el accidente aéreo", "el aterrizaje"], "correct": 0 },
-  { "text": "das Zugunglück", "options": ["el accidente de tren", "el viaje en tren"], "correct": 0 },
-  { "text": "das Gleis", "options": ["la vía", "el vagón"], "correct": 0 },
-  { "text": "entgleisen", "options": ["descarrilar", "frenar"], "correct": 0 },
-
-  { "text": "Ist der Zug ___?", "options": ["entgleist", "entgleisen"], "correct": 0 },
-  { "text": "Ist der Zug danach mit einem anderen Zug ___?", "options": ["zusammengestoßen", "zusammenstoßen"], "correct": 0 },
-
-  { "text": "der Bericht", "options": ["el informe", "la noticia falsa"], "correct": 0 },
-  { "text": "der Wagon", "options": ["el vagón", "la estación"], "correct": 0 },
-  { "text": "sich übergeben", "options": ["vomitar", "toser"], "correct": 0 },
-  { "text": "die Leichen", "options": ["los cadáveres", "los heridos"], "correct": 0 },
-
-  { "text": "Es gab Leichen ___.", "options": ["überall", "überall es"], "correct": 0 },
-
-  { "text": "Koffein", "options": ["cafeína", "azúcar"], "correct": 0 },
-  { "text": "regelmäßig", "options": ["regularmente", "raramente"], "correct": 0 },
-
-  { "text": "Denkst du, dass Red Bull mehr Koffein hat ___ Kaffee?", "options": ["als", "wie"], "correct": 0 },
-  { "text": "Hat Tee genauso viel Koffein ___ Kaffee?", "options": ["wie", "als"], "correct": 0 },
-
-  { "text": "___ die Sonne scheint, gehe ich spazieren.", "options": ["Wenn", "Wann"], "correct": 0 },
-  { "text": "Wenn die Sonne scheint, ___ spazieren.", "options": ["gehe ich", "ich gehe"], "correct": 0 },
-  { "text": "Er muss spät arbeiten. ___ trinkt er normalerweise Red Bull.", "options": ["Wenn", "Deshalb"], "correct": 1 },
-
-  { "text": "Unregelmäßigkeiten", "options": ["irregularidades", "horarios"], "correct": 0 },
-  { "text": "Wenn irgendetwas nicht nach Plan ___, gibt es ein Problem.", "options": ["läuft", "laufen"], "correct": 0 },
-
-  { "text": "unter anderem", "options": ["entre otras cosas", "por casualidad"], "correct": 0 },
-  { "text": "Bist du am 14. Januar ___?", "options": ["zurückgekommen", "zurückkommen"], "correct": 0 },
-
-  { "text": "Ich war 20 Tage in Madrid und bin ___ nach Sevilla gefahren.", "options": ["danach", "vorher"], "correct": 0 },
-
-  { "text": "etwas hören", "options": ["oír algo", "mirar algo"], "correct": 0 },
-  { "text": "sich etwas anhören", "options": ["escuchar algo", "escribir algo"], "correct": 0 },
-  { "text": "Hast du dir die Nachrichten im Fernsehen ___?", "options": ["angesehen", "gesehen an"], "correct": 0 },
-
-  { "text": "Ich habe mit den Eltern ___ Pedro gesprochen.", "options": ["von", "für"], "correct": 0 },
-  { "text": "20 Personen ___ getötet.", "options": ["wurden", "haben"], "correct": 0 },
-
-  { "text": "___ ich nach Sevilla fahre, mache ich Urlaub in Berlin.", "options": ["Bevor", "Nachdem"], "correct": 0 },
-  { "text": "Nachdem ich in Madrid Urlaub gemacht ___, fahre ich nach Sevilla.", "options": ["habe", "bin"], "correct": 0 },
-
-  { "text": "Ich putze mir die Zähne →", "options": ["das Zähneputzen", "die Zähne"], "correct": 0 }
+  {
+    "text": "die Ruhe & Gemütlichkeit",
+    "options": ["la calma y la comodidad", "el ruido y la prisa"],
+    "correct": 0
+  },
+  {
+    "text": "Ich nehme es mit Gelassenheit.",
+    "options": ["Me pongo muy nervioso/a.", "Me lo tomo con calma."],
+    "correct": 1
+  },
+  {
+    "text": "sich etwas angewöhnen",
+    "options": ["olvidar algo", "acostumbrarse a algo"],
+    "correct": 1
+  },
+  {
+    "text": "sich viele Gedanken machen",
+    "options": ["preocuparse mucho", "descansar profundamente"],
+    "correct": 0
+  },
+  {
+    "text": "Zwangsgedanken",
+    "options": ["pensamientos obsesivos", "sueños agradables"],
+    "correct": 0
+  },
+  {
+    "text": "ändern",
+    "options": ["cambiar", "repetir"],
+    "correct": 0
+  },
+  {
+    "text": "verändern",
+    "options": ["conservar", "modificar / transformar"],
+    "correct": 1
+  },
+  {
+    "text": "die Atmung",
+    "options": ["la respiración", "el pulso"],
+    "correct": 0
+  },
+  {
+    "text": "die Gegenwart",
+    "options": ["el pasado", "el presente"],
+    "correct": 1
+  },
+  {
+    "text": "die Vergangenheit",
+    "options": ["el futuro", "el pasado"],
+    "correct": 1
+  },
+  {
+    "text": "der Ausschnitt",
+    "options": ["el fragmento", "la película completa"],
+    "correct": 0
+  },
+  {
+    "text": "knauserig",
+    "options": ["generoso", "tacaño"],
+    "correct": 1
+  },
+  {
+    "text": "geizig",
+    "options": ["paciente", "avaro"],
+    "correct": 1
+  },
+  {
+    "text": "Ich mache mir viele ________.",
+    "options": ["Gedanken", "Gedanke"],
+    "correct": 0
+  },
+  {
+    "text": "Du machst dir viele ________.",
+    "options": ["denken", "Gedanken"],
+    "correct": 1
+  },
+  {
+    "text": "Er ________ sich viele Gedanken.",
+    "options": ["machen", "macht"],
+    "correct": 1
+  },
+  {
+    "text": "Ich bin eine Person, die sich viele Gedanken ________.",
+    "options": ["macht", "machen"],
+    "correct": 0
+  },
+  {
+    "text": "Ich denke oft ________ meine Probleme nach.",
+    "options": ["über", "auf"],
+    "correct": 0
+  },
+  {
+    "text": "Ich mache mir Gedanken ________ meine Zukunft.",
+    "options": ["über", "für"],
+    "correct": 0
+  },
+  {
+    "text": "Ich hatte früher Depressionen, aber jetzt ________ es mir besser.",
+    "options": ["gehe", "geht"],
+    "correct": 1
+  },
+  {
+    "text": "Früher war ich depressiv, heute ________ ich optimistischer.",
+    "options": ["bin", "war"],
+    "correct": 0
+  },
+  {
+    "text": "Ich habe mir die Serie ________.",
+    "options": ["gesehen an", "angesehen"],
+    "correct": 1
+  },
+  {
+    "text": "Ich habe die Serie ________.",
+    "options": ["angesehen an", "gesehen"],
+    "correct": 1
+  },
+  {
+    "text": "Ich habe nur Ausschnitte von dem Film auf YouTube ________.",
+    "options": ["gesehen", "angesehen mir"],
+    "correct": 0
+  },
+  {
+    "text": "Ich versuche immer, gute Laune zu ________, auch wenn ich gestresst bin.",
+    "options": ["behalten", "behalten"],
+    "correct": 1
+  },
+  {
+    "text": "Ich ________ das lieber.",
+    "options": ["mag", "mache"],
+    "correct": 1
+  },
+  {
+    "text": "Ich mache es lieber ________.",
+    "options": ["so", "so"],
+    "correct": 1
+  },
+  {
+    "text": "Zum Frühstück habe ich mir zwei ________ Eier gemacht.",
+    "options": ["hartgekochte", "hartkochen"],
+    "correct": 0
+  },
+  {
+    "text": "Zum Frühstück habe ich mir ________ gemacht.",
+    "options": ["rühren", "Rührei"],
+    "correct": 1
+  },
+  {
+    "text": "Zum Frühstück habe ich mir zwei ________ mit Vollkornbrot gemacht.",
+    "options": ["Spiegeleier", "Spiegeleier"],
+    "correct": 1
+  }
 ]
 
 
